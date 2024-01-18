@@ -77,6 +77,11 @@ button {
     justify-content: space-around;
 }
 
+.result-image {
+    width: 100px;
+    height: 100px;
+}
+
 /* Score */
 .score-area {
     display: flex;
