@@ -126,8 +126,22 @@ footer {
     }
 }
 
+@media screen and (min-width:582px) {
+    .button {
+        width: 9rem;
+    }
+
+    .result-image {
+        width: 225px;
+    }
+
+    .score-area {
+        font-size: 1.5rem;
+    }
+}
+
 @media screen and (min-width:768px) {
-    #header {
+    #heading {
         font-size: 3rem;
     }
 
