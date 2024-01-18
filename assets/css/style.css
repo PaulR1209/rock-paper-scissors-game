@@ -130,4 +130,16 @@ footer {
     #header {
         font-size: 3rem;
     }
+
+    .button {
+        width: 10rem;
+    }
+
+    .result-image {
+        width: 235px;
+    }
+
+    .score-area {
+        font-size: 2rem;
+    }
 }
