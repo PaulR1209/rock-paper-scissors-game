@@ -44,7 +44,7 @@ main {
     margin: 1rem;    
 }
 
-.instructions-reset-buttons {
+.button {
     background-color: saddlebrown;
     color: #ffffff;
     border: 2px solid black;
@@ -52,9 +52,10 @@ main {
     padding: 2px;
     width: 5rem;
     font-size: 0.75rem;
+    margin: 0.5rem;
 }
 
-.instructions-reset-buttons:hover {
+.button:hover {
     background-color: rgb(177, 89, 25);
     transform: scale(1.1);
 }
