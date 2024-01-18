@@ -1,59 +1,59 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- font awesome and google fonts-->
-    <script
-      src="https://kit.fontawesome.com/f56a00d2f7.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/f56a00d2f7.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Rock Paper Scissors</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Heading -->
     <header>
-      <h1 id="heading">Rock Paper Scissors</h1>
+        <h1 id="heading">Rock Paper Scissors</h1>
     </header>
     <!-- Game section -->
     <main>
-      <section class="game-area">
-        <!-- Controls -->
-        <div class="game-controls">
-          <button id="rock">
-            <i class="fa-solid fa-hand-back-fist"></i>
-          </button>
-          <button id="paper">
-            <i class="fa-solid fa-hand"></i>
-          </button>
-          <button id="scissors">
-            <i class="fa-solid fa-hand-scissors"></i>
-          </button>
-          <button class="reset">Reset</button>
+        <section class="game-area">
+            <!-- Instructions -->
+            <div class="instructions">
+                <button id="instructions">Instructions</button>
+                <button id="reset">Reset</button>
+            </div>
+            <!-- Controls -->
+            <div class="game-controls">
+                <button id="rock">
+                    <i class="fa-solid fa-hand-back-fist"></i>
+                </button>
+                <button id="paper">
+                    <i class="fa-solid fa-hand"></i>
+                </button>
+                <button id="scissors">
+                    <i class="fa-solid fa-hand-scissors"></i>
+                </button>
+            </div>
+            <!-- User and opponents choice of rock, paper or scissors -->
+            <div class="game-results">
+                <div class="my-result">
+                    <i class="fa-solid fa-hand"></i>
+                </div>
+                <div class="opponent-result">
+                    <i class="fa-solid fa-hand"></i>
+                </div>
+            </div>
+        </section>
+        <!-- Score -->
+        <div class="score-area">
+            <p class="scores">My score <span id="my-score">0</span></p>
+            <p class="scores">Opponent score <span id="opponent-score">0</span></p>
         </div>
-        <!-- User and opponents choice of rock, paper or scissors -->
-        <div class="game-results">
-          <div class="my-result">
-            <i class="fa-solid fa-hand"></i>
-          </div>
-          <div class="opponent-result">
-            <i class="fa-solid fa-hand"></i>
-          </div>
-        </div>
-      </section>
-      <!-- Score -->
-      <div class="score-area">
-        <p class="scores">My score <span id="my-score">0</span></p>
-        <p class="scores">Opponent score <span id="opponent-score">0</span></p>
-      </div>
     </main>
     <footer>
         <div>
@@ -61,5 +61,6 @@
         </div>
     </footer>
     <script src="assets/js/script.js"></script>
-  </body>
+</body>
+
 </html>
