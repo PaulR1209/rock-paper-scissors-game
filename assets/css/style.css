@@ -38,13 +38,28 @@ main {
 
 /* Buttons */
 
-.instructions {
+#instructions {
     display: flex;
     justify-content: space-evenly;
-    margin: 1rem;
+    margin: 1rem;    
 }
 
-.game-controls {
+.instructions-reset-buttons {
+    background-color: saddlebrown;
+    color: #ffffff;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    width: 5rem;
+    font-size: 0.75rem;
+}
+
+.instructions-reset-buttons:hover {
+    background-color: rgb(177, 89, 25);
+    transform: scale(1.1);
+}
+
+#game-controls {
     display: flex;
     justify-content: space-between;
     margin: 1rem;
