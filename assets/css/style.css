@@ -38,7 +38,7 @@ main {
 }
 
 .game-content {
-    margin-top: 3.5rem;
+    margin-top: 4rem;
 }
 
 /* Buttons */
@@ -53,11 +53,12 @@ main {
 .button {
     background-color: saddlebrown;
     color: #ffffff;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 5px;
     padding: 2px;
-    width: 10rem;
-    font-size: 1rem;
+    width: 13rem;
+    height: auto;
+    font-size: 1.3rem;
     margin: 0.1rem;
 }
 
@@ -74,15 +75,15 @@ main {
 }
 
 .result-image {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: auto;
 }
 
 /* Score */
 .score-area {
     display: flex;
     justify-content: space-around;
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin-top: 1rem;
 }
 
