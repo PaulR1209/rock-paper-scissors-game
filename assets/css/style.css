@@ -95,3 +95,39 @@ footer {
     color: #ffffff;
     font-size: 0.6rem;
 }
+
+@media screen and (min-width:375px) {
+    #heading {
+        font-size: 1.75rem;
+    }
+
+    .button {
+        width: 14rem;
+        font-size: 1.4rem;
+    }
+
+    .result-image {
+        width: 135px;
+    }
+}
+
+@media screen and (min-width:425px) {
+    #heading {
+        font-size: 2rem;
+    }
+
+    .button {
+        width: 15rem;
+        font-size: 1.5rem;
+    }
+
+    .result-image {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #header {
+        font-size: 3rem;
+    }
+}
