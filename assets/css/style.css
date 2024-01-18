@@ -43,11 +43,11 @@ main {
 
 /* Buttons */
 
-#instructions {
+.button-div {
     margin: 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .button {
@@ -64,18 +64,6 @@ main {
 .button:hover {
     background-color: rgb(177, 89, 25);
     transform: scale(1.1);
-}
-
-#game-controls {
-    margin: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-button {
-    width: 3rem;
-    height: 2rem;
 }
 
 /* Results */

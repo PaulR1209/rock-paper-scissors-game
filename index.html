@@ -21,42 +21,44 @@
     </header>
     <!-- Game section -->
     <main>
+        <!-- content inside opaque box -->
         <div class="game-content">
-        <section class="game-area">
-            <!-- Instructions -->
-            <div id="instructions">
-                <button type="button" class="button">Instructions</button>
-                <button type="button" class="button">Reset</button>
-            </div>
-            <!-- Controls -->
-            <div id="game-controls">
-                <button class="button" type="button" id="rock">
-                    Rock
-                </button>
-                <button class="button" type="button" id="paper">
-                    Paper
-                </button>
-                <button class="button" type="button" id="scissors">
-                    Scissors
-                </button>
-            </div>
-            <!-- User and opponents choice of rock, paper or scissors -->
-            <div class="game-results">
-                <div id="my-result">
-                    <img class="result-image" src="assets/images/paper.png" alt="My Result">
+            <section class="game-area">
+                <!-- Buttons -->
+                <div class="button-div">
+                    <button type="button" class="button">Instructions</button>
+                    <button type="button" class="button">Reset</button>
                 </div>
-                <div id="opponent-result">
-                    <img class="result-image" src="assets/images/paper.png" alt="Opponent Result">
+
+                <div class="button-div">
+                    <button class="button" type="button" id="rock">
+                        Rock
+                    </button>
+                    <button class="button" type="button" id="paper">
+                        Paper
+                    </button>
+                    <button class="button" type="button" id="scissors">
+                        Scissors
+                    </button>
                 </div>
+                <!-- Game results -->
+                <div class="game-results">
+                    <div id="my-result">
+                        <img class="result-image" src="assets/images/paper.png" alt="My Result">
+                    </div>
+                    <div id="opponent-result">
+                        <img class="result-image" src="assets/images/paper.png" alt="Opponent Result">
+                    </div>
+                </div>
+            </section>
+            <!-- Score -->
+            <div class="score-area">
+                <p class="scores">My score <span id="my-score">0</span></p>
+                <p class="scores">Opponent score <span id="opponent-score">0</span></p>
             </div>
-        </section>
-        <!-- Score -->
-        <div class="score-area">
-            <p class="scores">My score <span id="my-score">0</span></p>
-            <p class="scores">Opponent score <span id="opponent-score">0</span></p>
-        </div>
         </div>
     </main>
+    <!-- Footer -->
     <footer>
         <div>
             Created by Paul Russell for Project Portfolio 2
