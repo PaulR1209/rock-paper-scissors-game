@@ -44,7 +44,7 @@ main {
 /* Modal box for instructions */
 
 #my-modal {
-    display: none;
+    /* display: none; */
     position: fixed;
     z-index: 1;
     width: 85%;
@@ -53,6 +53,16 @@ main {
     background-color: rgb(177, 89, 25);
     color: #ffffff;
     border: 2px solid black;
+}
+
+#modal-content {
+    padding: 10px;
+}
+
+#close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /* Buttons */
