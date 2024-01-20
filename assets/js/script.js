@@ -1,20 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    // Button click function
     let buttons = document.getElementsByTagName('button');
 
     for (let button of buttons) {
         button.addEventListener('click', function() {
-            if (this.getAttribute('data-type') === 'reset') {
-                alert('You clicked reset!');
-            } else {
-                let gameType = this.getAttribute('data-type');
-                alert(`you clicked ${gameType}`);
-            }
+            const myInput = this.textContent;
+
+            const opponentOptions = ['Rock', 'Paper', 'Scissors'];
+            const opponentInput = opponentOptions[Math.floor(Math.random() * 3)];
         })
     }
 })
-
-// Instructions box
-
-function modal() {
-
-}
