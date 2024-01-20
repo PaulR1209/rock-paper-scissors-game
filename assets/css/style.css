@@ -41,6 +41,20 @@ main {
     margin-top: 4rem;
 }
 
+/* Modal box for instructions */
+
+#my-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 85%;
+    height: auto;
+    overflow: auto;
+    background-color: rgb(177, 89, 25);
+    color: #ffffff;
+    border: 2px solid black;
+}
+
 /* Buttons */
 
 .button-div {
