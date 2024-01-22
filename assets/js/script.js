@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const opponentOptions = ['Rock', 'Paper', 'Scissors'];
             const opponentInput = opponentOptions[Math.floor(Math.random() * 3)];
+
+            game(myInput, opponentInput);
         })
     }
 })
