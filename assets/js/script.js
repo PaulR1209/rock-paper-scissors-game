@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // Button click function
-    let buttons = document.getElementsByTagName('button');
+    let buttons = document.getElementsByClassName('button')
+    let myScore = 0;
+    let opponentScore = 0;
 
     for (let button of buttons) {
         button.addEventListener('click', function () {
@@ -9,40 +11,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const opponentOptions = ['Rock', 'Paper', 'Scissors'];
             const opponentInput = opponentOptions[Math.floor(Math.random() * 3)];
-
+                
             game(myInput, opponentInput);
-        })
+        });
     }
-})
+});
 
 function game(myInput, opponentInput) {
-    
+
+    const match = `${myInput} vs ${opponentInput}`;
+
     if (myInput === opponentInput) {
-        alert(`${game} Draw`);
-        return;
-    }
-
-    if (myInput === 'Rock') {
-        if (opponentInput === 'Paper') {
-            alert(`${game} = Opponent Wins`);
-        } else {
-            alert(`${game} = You Win`);
-        }
-    }
-
-    if (myInput === 'Paper') {
-        if (opponentInput === 'Scissors') {
-            alert(`${game} = Opponent Wins`);
-        } else {
-            alert(`${game} = You Win`);
-        }
-    }
-
-    if (myInput === 'Scissors') {
-        if (opponentInput === 'Rock') {
-            alert(`${game} = Opponent Wins`);
-        } else {
-            alert(`${game} = You Win`);
-        }
+        console.log(`${match} = Draw`);
+        
+    } else if (
+        (myInput === 'Rock' && opponentInput === 'Scissors') ||
+        (myInput === 'Paper' && opponentInput === 'Rock') ||
+        (myInput === 'Scissors' && opponentInput === 'Paper')
+    ) {
+        console.log(`${match} = You Win`);
+    } else {
+        console.log(`${match} = Opponent Wins`);
     }
 }
