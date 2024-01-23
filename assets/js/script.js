@@ -74,6 +74,6 @@ function checkWinner() {
 
 function updateResultImage(myInput, opponentInput) {
 
-    document.getElementById('my-input-img').src = './assets/${myInput}.png'
-    document.getElementById('opp-input-img').src = './assets/${opponentInput}.png'
+    document.getElementById('my-input-img').src = `assets/images/${myInput}.png`;
+    document.getElementById('opp-input-img').src = `assets/images/${opponentInput}.png`;
 }
