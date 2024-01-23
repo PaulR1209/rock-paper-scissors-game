@@ -45,3 +45,11 @@ function updateScore() {
     document.getElementById('opponent-score').textContent = opponentScore;
 }
 
+function checkWinner() {
+    if (myScore === 5 || opponentScore === 5) {
+        let winner;
+
+        
+    }
+}
+
