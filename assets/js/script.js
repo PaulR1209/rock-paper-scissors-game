@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 
             game(myInput, opponentInput);
             updateScore();
+
+            if(checkWinner()) {
+                myScore = 0;
+                opponentScore = 0;
+                updateScore();
+            }
         });
     }
 });
@@ -49,7 +55,19 @@ function checkWinner() {
     if (myScore === 5 || opponentScore === 5) {
         let winner;
 
+        if (myScore === 5) {
+            winner = 'You Win!';
+        } else {
+            winner = 'You Lose...';
+        }
+
+        alert(winner);
+
+        return true;
+
         
     }
+
+    return false;
 }
 
