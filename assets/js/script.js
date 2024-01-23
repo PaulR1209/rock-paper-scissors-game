@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const opponentOptions = ['Rock', 'Paper', 'Scissors'];
             const opponentInput = opponentOptions[Math.floor(Math.random() * 3)];
                 
+            updateResultImage(myInput, opponentInput);
             game(myInput, opponentInput);
             updateScore();
 
@@ -71,3 +72,8 @@ function checkWinner() {
     return false;
 }
 
+function updateResultImage(myInput, opponentInput) {
+
+    document.getElementById('my-input-img').src = './assets/${myInput}.png'
+    document.getElementById('opp-input-img').src = './assets/${opponentInput}.png'
+}
