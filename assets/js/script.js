@@ -1,16 +1,23 @@
+
+// set value of scores
 let myScore = 0;
 let opponentScore = 0;
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    document.getElementById("resetScore").addEventListener("click", resetScore);
+    // button click funtion for instructions and reset buttons
 
-    // Button click function
+    document.getElementById("resetScore").addEventListener("click", resetScore);
+    document.getElementById("instructions").addEventListener("click", instructions);
+
+    // Button click function for game
     let buttons = document.getElementsByClassName('button')
 
     for (let button of buttons) {
         button.addEventListener('click', function () {
             const myInput = this.textContent;
+
+            // computer input which chooses randomly
 
             const opponentOptions = ['Rock', 'Paper', 'Scissors'];
             const opponentInput = opponentOptions[Math.floor(Math.random() * 3)];
@@ -28,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+/** This function compares the input of the user and computer and determines result */
 function game(myInput, opponentInput) {
 
     const match = `${myInput} vs ${opponentInput}`;
@@ -48,12 +56,17 @@ function game(myInput, opponentInput) {
     }
 }
 
+/**
+ * This updates the scores on the HTML page
+ */
 function updateScore() {
 
     document.getElementById('my-score').textContent = myScore;
     document.getElementById('opponent-score').textContent = opponentScore;
 }
 
+/** checks if player or computer has 5 points. 
+ * If either reach 5 points, they win, if not the loop starts again */
 function checkWinner() {
     if (myScore === 5 || opponentScore === 5) {
         let winner;
@@ -74,12 +87,14 @@ function checkWinner() {
     return false;
 }
 
+/** changes the image based on player and computer input */
 function updateResultImage(myInput, opponentInput) {
 
     document.getElementById('my-input-img').src = `assets/images/${myInput}.png`
     document.getElementById('opp-input-img').src = `assets/images/${opponentInput}.png`
 }
 
+/** resets the score to 0-0 upon clicking the reset button */
 function resetScore() {
     myScore = 0;
     opponentScore = 0;
