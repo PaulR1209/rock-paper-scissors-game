@@ -99,7 +99,7 @@ main {
 }
 
 .result-image {
-    width: 120px;
+    width: 100px;
     height: auto;
 }
 
@@ -107,7 +107,7 @@ main {
 .score-area {
     display: flex;
     justify-content: space-around;
-    font-size: 1rem;
+    font-size: 0.75rem;
     margin-top: 1rem;
 }
 
@@ -132,6 +132,10 @@ footer {
 
     .result-image {
         width: 135px;
+    }
+
+    .score-area {
+        font-size: 1rem;
     }
 }
 
