@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById("resetScore").addEventListener("click", resetScore);
     document.getElementById("instructions").addEventListener("click", instructions);
+    modalBox();
 
     // Button click function for game
     let buttons = document.getElementsByClassName('button')
@@ -99,4 +100,19 @@ function resetScore() {
     myScore = 0;
     opponentScore = 0;
     updateScore();
+}
+
+/** opens and closes the instrcutions when clicking the instructions button */
+function modalBox() {
+    let modal = document.getElementById('my-modal');
+    let button = document.getElementById('instructions');
+    let close = document.getElementById('close');
+
+    button.onclick =function() {
+        modal.style.display = 'block';
+    }
+
+    close.onclick = function() {
+        modal.style.display = 'none';
+    }
 }
