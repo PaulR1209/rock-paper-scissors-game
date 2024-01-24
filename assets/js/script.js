@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // button click function
 
     document.getElementById("resetScore")
-    .addEventListener("click", resetScore);
+        .addEventListener("click", resetScore);
 
     document.getElementById("instructions")
-    .addEventListener("click", modalBox);
+        .addEventListener("click", modalBox);
     modalBox();
 
     function buttonClickEvent(button) {

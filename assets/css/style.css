@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url(../images/background-image.jpg) no-repeat center center / cover;
+    background-color: whitesmoke;
 }
 
 /* header */
@@ -25,17 +25,11 @@ header {
 #heading {
     font-weight: 900;
     font-size: 1.5rem;
-    color: #ffffff;
+    color: saddlebrown;
 }
 
 /* main content */
-main {
-    flex: 1 0 auto;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #ffffff;
-    opacity: 0.6;
-}
+
 
 .game-content {
     margin-top: 1rem;
@@ -115,14 +109,16 @@ main {
     justify-content: space-around;
     font-size: 0.75rem;
     margin-top: 1rem;
+    color: saddlebrown;
 }
 
 /* footer */
 footer {
     display: flex;
     justify-content: center;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
+    margin-top: auto;
+    padding: 1rem;
+    color: saddlebrown;
     font-size: 0.6rem;
 }
 
@@ -143,6 +139,10 @@ footer {
     .score-area {
         font-size: 1rem;
     }
+
+    footer {
+        font-size: 0.75rem;
+    }
 }
 
 @media screen and (min-width:425px) {
@@ -157,6 +157,10 @@ footer {
 
     .result-image {
         width: 150px;
+    }
+
+    footer {
+        font-size: 0.75rem;
     }
 }
 
