@@ -59,7 +59,7 @@ main {
     padding: 10px;
 }
 
-#modal-content > p {
+#modal-content>p {
     margin-top: 10px;
 }
 
@@ -78,7 +78,8 @@ main {
     justify-content: center;
 }
 
-.button, .btn {
+.button,
+.btn {
     background-color: saddlebrown;
     color: #ffffff;
     border: 3px solid black;
@@ -90,7 +91,8 @@ main {
     margin: 0.1rem;
 }
 
-.button:hover, .btn:hover {
+.button:hover,
+.btn:hover {
     background-color: rgb(177, 89, 25);
     transform: scale(1.1);
 }

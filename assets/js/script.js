@@ -1,4 +1,3 @@
-
 // set value of scores
 let myScore = 0;
 let opponentScore = 0;
@@ -22,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
             // computer input which chooses randomly
 
             const opponentInput = options[Math.floor(Math.random() * 3)];
-                
+
             updateResultImage(myInput, opponentInput);
             game(myInput, opponentInput);
             updateScore();
 
-            if(checkWinner()) {
+            if (checkWinner()) {
                 myScore = 0;
                 opponentScore = 0;
                 updateScore();
@@ -42,7 +41,7 @@ function game(myInput, opponentInput) {
     const match = `${myInput} vs ${opponentInput}`;
 
     if (myInput === opponentInput) {
-        
+
     } else if (
         (myInput === 'Rock' && opponentInput === 'Scissors') ||
         (myInput === 'Paper' && opponentInput === 'Rock') ||
@@ -79,7 +78,7 @@ function checkWinner() {
 
         return true;
 
-        
+
     }
 
     return false;
@@ -105,11 +104,11 @@ function modalBox() {
     let button = document.getElementById('instructions');
     let close = document.getElementById('close');
 
-    button.onclick =function() {
+    button.onclick = function () {
         modal.style.display = 'block';
     }
 
-    close.onclick = function() {
+    close.onclick = function () {
         modal.style.display = 'none';
     }
 }
