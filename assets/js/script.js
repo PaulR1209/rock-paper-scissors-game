@@ -5,7 +5,7 @@ var opponentScore = 0;
 document.addEventListener("DOMContentLoaded", function () {
 
     var buttons = document.getElementsByClassName("button");
-    var options = ["Rock", "Paper", "Scissors"];
+    var options = ["rock", "paper", "scissors"];
 
     // button click function
 
@@ -49,9 +49,9 @@ function game(myInput, opponentInput) {
     if (myInput === opponentInput) {
 
     } else if (
-        (myInput === "Rock" && opponentInput === "Scissors") ||
-        (myInput === "Paper" && opponentInput === "Rock") ||
-        (myInput === "Scissors" && opponentInput === "Paper")
+        (myInput === "rock" && opponentInput === "scissors") ||
+        (myInput === "paper" && opponentInput === "rock") ||
+        (myInput === "scissors" && opponentInput === "paper")
     ) {
         myScore++;
     } else {
