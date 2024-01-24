@@ -59,6 +59,10 @@ main {
     padding: 10px;
 }
 
+#modal-content > p {
+    margin-top: 10px;
+}
+
 #close {
     float: right;
     font-size: 1.5rem;
