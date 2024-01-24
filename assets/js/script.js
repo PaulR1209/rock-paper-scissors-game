@@ -42,7 +42,6 @@ function game(myInput, opponentInput) {
     const match = `${myInput} vs ${opponentInput}`;
 
     if (myInput === opponentInput) {
-        alert(`${match} = Draw`);
         
     } else if (
         (myInput === 'Rock' && opponentInput === 'Scissors') ||
@@ -50,10 +49,8 @@ function game(myInput, opponentInput) {
         (myInput === 'Scissors' && opponentInput === 'Paper')
     ) {
         myScore++;
-        alert(`${match} = You Win`);
     } else {
         opponentScore++;
-        alert(`${match} = Opponent Wins`);
     }
 }
 
