@@ -12,15 +12,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Button click function for game
     let buttons = document.getElementsByClassName('button')
+    let options = ['Rock', 'Paper', 'Scissors'];
 
     for (let button of buttons) {
         button.addEventListener('click', function () {
-            const myInput = this.textContent;
+            const myInput = button.getAttribute('data-choice');
 
             // computer input which chooses randomly
 
-            const opponentOptions = ['Rock', 'Paper', 'Scissors'];
-            const opponentInput = opponentOptions[Math.floor(Math.random() * 3)];
+            const opponentInput = options[Math.floor(Math.random() * 3)];
                 
             updateResultImage(myInput, opponentInput);
             game(myInput, opponentInput);
