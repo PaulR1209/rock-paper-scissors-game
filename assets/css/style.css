@@ -38,7 +38,7 @@ main {
 }
 
 .game-content {
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
 
 /* Modal box for instructions */
@@ -177,6 +177,10 @@ footer {
 @media screen and (min-width:768px) {
     #heading {
         font-size: 3rem;
+    }
+
+    .game-content {
+        margin-top: 8rem;
     }
 
     .button {
