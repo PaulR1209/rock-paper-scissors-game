@@ -3,6 +3,8 @@ let opponentScore = 0;
 
 document.addEventListener('DOMContentLoaded', function () {
 
+    document.getElementById("resetScore").addEventListener("click", resetScore);
+
     // Button click function
     let buttons = document.getElementsByClassName('button')
 
@@ -74,6 +76,12 @@ function checkWinner() {
 
 function updateResultImage(myInput, opponentInput) {
 
-    document.getElementById('my-input-img').src = `assets/images/${myInput}.png`;
-    document.getElementById('opp-input-img').src = `assets/images/${opponentInput}.png`;
+    document.getElementById('my-input-img').src = `assets/images/${myInput}.png`
+    document.getElementById('opp-input-img').src = `assets/images/${opponentInput}.png`
+}
+
+function resetScore() {
+    myScore = 0;
+    opponentScore = 0;
+    updateScore();
 }
