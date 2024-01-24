@@ -3,7 +3,6 @@ let myScore = 0;
 let opponentScore = 0;
 
 document.addEventListener('DOMContentLoaded', function () {
-
     // button click funtion for instructions and reset buttons
 
     document.getElementById("resetScore").addEventListener("click", resetScore);
