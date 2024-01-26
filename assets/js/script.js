@@ -3,21 +3,17 @@ var myScore = 0;
 var opponentScore = 0;
 
 document.addEventListener("DOMContentLoaded", function () {
-
     var buttons = document.getElementsByClassName("button");
     var options = ["rock", "paper", "scissors"];
 
     // button click function
 
-    document.getElementById("resetScore")
-        .addEventListener("click", resetScore);
+    document.getElementById("resetScore").addEventListener("click", resetScore);
 
-    document.getElementById("instructions")
-        .addEventListener("click", modalBox);
+    document.getElementById("instructions").addEventListener("click", modalBox);
     modalBox();
 
     function buttonClickEvent(button) {
-
         button.addEventListener("click", function () {
             const myInput = button.getAttribute("data-choice");
 
@@ -43,24 +39,20 @@ document.addEventListener("DOMContentLoaded", function () {
 /** This function compares the input of the user and computer
  *  and determines result */
 function game(myInput, opponentInput) {
-
     if (myInput === opponentInput) {
-        updateTextFeedback("This Round is a Draw")
-    } else if (
-        (myInput === "rock" && opponentInput === "scissors") ||
-        (myInput === "paper" && opponentInput === "rock") ||
-        (myInput === "scissors" && opponentInput === "paper")
-    ) {
+        updateTextFeedback("This Round is a Draw");
+    } else if ((myInput === "rock" && opponentInput === "scissors") || (myInput === "paper" && opponentInput === "rock") || (myInput === "scissors" && opponentInput === "paper")) {
         myScore++;
-        updateTextFeedback("You Win This Round")
+        updateTextFeedback("You Win This Round");
     } else {
         opponentScore++;
-        updateTextFeedback("You Lose This Round...")
+        updateTextFeedback("You Lose This Round...");
     }
 }
 
+// this allows me to change the color of the message depending on result in CSS
 function updateTextFeedback(feedback) {
-    var textFeedbackElement = document.getElementById("text-feedback")
+    var textFeedbackElement = document.getElementById("text-feedback");
     textFeedbackElement.textContent = feedback;
 
     textFeedbackElement.classList.remove("win", "lose");
@@ -75,7 +67,6 @@ function updateTextFeedback(feedback) {
  * This updates the scores on the HTML page
  */
 function updateScore() {
-
     document.getElementById("my-score").textContent = myScore;
     document.getElementById("opponent-score").textContent = opponentScore;
 }
@@ -95,8 +86,6 @@ function checkWinner() {
         alert(winner);
 
         return true;
-
-
     }
 
     return false;
@@ -104,14 +93,13 @@ function checkWinner() {
 
 /** changes the image based on player and computer input */
 function updateResultImage(myInput, opponentInput) {
+    document.getElementById("my-input-img").src = `assets/images/${myInput}.png`;
 
-    document.getElementById("my-input-img")
-        .src = `assets/images/${myInput}.png`;
-
-    document.getElementById("opp-input-img")
-        .src = `assets/images/${opponentInput}.png`;
+    document.getElementById("opp-input-img").src = `assets/images/${opponentInput}.png`;
 }
 
+// These two functions allow the final round results to display after winner is declared
+// and then reset after "game over" alert
 function resetGame() {
     myScore = 0;
     opponentScore = 0;
