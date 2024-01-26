@@ -215,4 +215,8 @@ footer {
     .score-area {
         font-size: 2rem;
     }
+
+    #text-feedback {
+        font-size: 2rem;
+    }
 }
