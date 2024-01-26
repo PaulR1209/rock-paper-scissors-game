@@ -30,9 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
             updateScore();
 
             if (checkWinner()) {
-                myScore = 0;
-                opponentScore = 0;
-                updateScore();
+                setTimeout(resetGameAndAlert, 0);
             }
         });
     }
@@ -112,6 +110,17 @@ function updateResultImage(myInput, opponentInput) {
 
     document.getElementById("opp-input-img")
         .src = `assets/images/${opponentInput}.png`;
+}
+
+function resetGame() {
+    myScore = 0;
+    opponentScore = 0;
+}
+
+function resetGameAndAlert() {
+    resetGame();
+    alert("Game Over");
+    updateScore();
 }
 
 /** resets the score to 0-0 upon clicking the reset button */

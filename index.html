@@ -22,9 +22,17 @@
     </header>
     <!-- Game section -->
     <main>
-        <!-- content inside opaque box -->
+        
         <div class="game-content">
             <section class="game-area">
+
+                <div id="result-modal">
+                    <div class="result-modal-content">
+                      <span class="close-result" onclick="closeModal()">&times;</span>
+                      <p id="winner-message"></p>
+                    </div>
+                  </div>       
+
                 <!-- Buttons -->
                 <div class="button-div">
                     <button class="btn" id="instructions" type="button">Instructions</button>
