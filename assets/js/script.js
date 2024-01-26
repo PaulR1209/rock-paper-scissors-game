@@ -62,7 +62,15 @@ function game(myInput, opponentInput) {
 }
 
 function updateTextFeedback(feedback) {
-    document.getElementById("text-feedback").textContent = feedback;
+    var textFeedbackElement = document.getElementById("text-feedback")
+    textFeedbackElement.textContent = feedback;
+
+    textFeedbackElement.classList.remove("win", "lose");
+    if (feedback === "You Win This Round") {
+        textFeedbackElement.classList.add("win");
+    } else if (feedback === "You Lose This Round...") {
+        textFeedbackElement.classList.add("lose");
+    }
 }
 
 /**

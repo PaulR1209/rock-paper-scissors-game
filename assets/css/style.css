@@ -112,6 +112,20 @@ header {
     color: saddlebrown;
 }
 
+#text-feedback {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+#text-feedback.win {
+    color: green;
+}
+
+#text-feedback.lose {
+    color: red;
+}
+
 /* footer */
 footer {
     display: flex;
