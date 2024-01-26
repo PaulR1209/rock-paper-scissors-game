@@ -47,16 +47,22 @@ document.addEventListener("DOMContentLoaded", function () {
 function game(myInput, opponentInput) {
 
     if (myInput === opponentInput) {
-
+        updateTextFeedback("This Round is a Draw")
     } else if (
         (myInput === "rock" && opponentInput === "scissors") ||
         (myInput === "paper" && opponentInput === "rock") ||
         (myInput === "scissors" && opponentInput === "paper")
     ) {
         myScore++;
+        updateTextFeedback("You Win This Round")
     } else {
         opponentScore++;
+        updateTextFeedback("You Lose This Round...")
     }
+}
+
+function updateTextFeedback(feedback) {
+    document.getElementById("text-feedback").textContent = feedback;
 }
 
 /**
