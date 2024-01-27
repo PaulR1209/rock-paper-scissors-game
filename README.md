@@ -119,7 +119,7 @@ I also have a second monitor which is the size of a small computer screen. I had
 
 # Bugs
 
-
+When the alert pops up to say whether you win or lose, the game resets before seeing the final result. The score does not load when you hit 5 points. I have put a temporary fix in place, while i figure out the issue. I have put a 'game over' alert, that pops up after the first alert, and I have set the game to reset after clicking out of this alert, to allow the final results to load. 
 
 # Deployment
 
